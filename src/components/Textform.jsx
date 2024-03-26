@@ -65,18 +65,18 @@ const handleExtraSpaces=()=>{
 }
   return (
     <>
-      <div class="mb-3">
-  <label for="myBox" class="form-label"><h1>{heading}</h1></label>
-  <textarea class="form-control" id="myBox" rows="10" onChange={()=>textToHandle(event) } value={presentText}></textarea>
+      <div className="mb-3">
+  <label for="myBox" className="form-label"><h1>{heading}</h1></label>
+  <textarea className="form-control" id="myBox" rows="10" onChange={()=>textToHandle(event) } value={presentText}></textarea>
 </div>
-<button className='btn btn-primary mx-2 my-2' onClick={()=>handleUpperCase()}>UPPER CASE</button>
-<button className='btn btn-primary mx-2 my-2' onClick={()=>handleLowerCase()}>lower case</button>
-<button className='btn btn-primary mx-2 my-2' onClick={()=>handleExtraSpaces()}>Remove extra spaces</button>
-<button className='btn btn-primary mx-2 my-2' onClick={()=>handleReset()}>Reset</button>
-{presentMode==="dark"?<button className='btn btn-primary mx-2 my-2' onClick={()=>handleLight()}>Light mode</button>:<button className='btn btn-info mx-2 my-2' onClick={()=>handleDark()}>Dark mode</button>}
-<div className='container'>words={noOfWords} charachers={noOfChar}
+<button classNameName='btn btn-primary mx-2 my-2' onClick={()=>handleUpperCase()}>UPPER CASE</button>
+<button classNameName='btn btn-primary mx-2 my-2' onClick={()=>handleLowerCase()}>lower case</button>
+<button classNameName='btn btn-primary mx-2 my-2' onClick={()=>handleExtraSpaces()}>Remove extra spaces</button>
+<button classNameName='btn btn-primary mx-2 my-2' onClick={()=>handleReset()}>Reset</button>
+{presentMode==="dark"?<button classNameName='btn btn-primary mx-2 my-2' onClick={()=>handleLight()}>Light mode</button>:<button classNameName='btn btn-info mx-2 my-2' onClick={()=>handleDark()}>Dark mode</button>}
+<div classNameName='container'>words={noOfWords} charachers={noOfChar}
 <div>time taken to read={0.008*noOfWords*60} seconds</div>
-<div className='container'>
+<div classNameName='container'>
   <h2>preview</h2>
   <p id='pcolor'>{presentText.length>0?presentText:"Enter something in textbox"}</p>
 </div>

@@ -17,7 +17,7 @@ const router=createBrowserRouter([
   {path:"/", element:<App/>,children:[
     {
       path:"/",
-      element:<div className='container my-10'><Textform heading={"Enter the text to analyze"} ></Textform></div>
+      element:<div classNameName='container my-10'><Textform heading={"Enter the text to analyze"} ></Textform></div>
     },
     {
       path:"/about",
